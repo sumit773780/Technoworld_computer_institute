@@ -1,0 +1,13 @@
+input {
+    border: none;
+    padding: 10px 10px;
+}
+
+input,
+button {
+    width: 300px;
+}
+
+input::placeholder {
+    text-align: center;
+}
