@@ -47,13 +47,19 @@
         .input-container:focus-within::after {
             transform: scaleX(1);
         }
+        select{
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="container">
         <div
-            class="row align-middle border border-danger border-3 rounded-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded justify-content-center mt-6 pt-5">
+            class="row align-middle border border-danger border-3 rounded-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded justify-content-center mt-3 pt-5">
             <div class="col-xl-7">
                 <h1 class="fw-bold">Addmission Form</h1>
                 <p><strong class="text-red">Note:</strong> Please fill the form</p>
@@ -69,11 +75,11 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-xl-3 ms-3">
+                        <div class="col-xl-4 ms-3">
                             <label for="fathername">Father Name:</label>
                             <input type="text" id="fathername" placeholder="Enter Father's Name" required>
                         </div>
-                        <div class="col-xl-3 ms-13">
+                        <div class="col-xl-4 ms-3">
                             <label for="mothername">Mother Name:</label>
                             <input type="text" id="mothername" placeholder="Enter mother Name" required>
                         </div>
@@ -100,8 +106,17 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-xl-4 ms-3">
-                            <label for="courses">Course:</label>
-                            <input type="text" id="courses" placeholder=" Enter Your Course" required>
+                            <label for="courses">Courses:</label>
+                            <select  name="courses" id="courses" required>
+                                <option value="Rs-cit">Rs-cit</option>
+                                <option value="Tally">Tally</option>
+                                <option value="CCC">CCC</option>
+                                <option value="Basic">Basic</option>
+                                <option value="Photoshop">Photoshop</option>
+                                <option value="Corel-Draw">Corel-Draw</option>
+                                <option value="DCA">DCA</option>
+                                <option value="PGDCA">PGDCA</option>
+                            </select>
                         </div>
                        
                     <div class="row">
